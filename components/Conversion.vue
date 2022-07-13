@@ -30,7 +30,7 @@
                             </div>
                         </th>
                         <th class="px-2 text-center" v-for="recommend of recommendationBySelected"
-                            :class="recommendedColour(recommendationBySelected)[0] === recommend ? ' bg-yellow-400/50' : recommendedColour(recommendationBySelected)[1] === recommend ? ' bg-gray-300/50' : ' bg-yellow-600/50'">
+                            :class="recommendedColour(recommendationBySelected)[0] === recommend ? ' bg-yellow-400/50' : recommendedColour(recommendationBySelected)[1] === recommend ? ' bg-gray-300/50' : ' bg-amber-900/25'">
                             <span>{{ recommend }}</span>
                         </th>
                     </tr>
@@ -63,7 +63,7 @@
 import { ref } from "vue";
 import conversion from "~/assets/conversion.json";
 
-const defaultLocale = "zh";
+const defaultLocale = "zh".toString();
 const locale = ref(defaultLocale);
 const localeList = ref([{
     value: "en",
