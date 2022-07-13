@@ -9,9 +9,9 @@
                 </option>
             </select>
         </div>
-        <div id="conversion-table" class="overflow-x-scroll">
-            <table class="w-full text-md text-left overflow-x-scroll">
-                <thead class="text-md bg-zinc-400 bg-opacity-30 text-[#3d0a07]">
+        <div class="overflow-x-auto">
+            <table id="conversion-table" class="w-full text-md text-left">
+                <thead class="text-md bg-stone-400/50 text-[#3d0a07]">
                     <tr>
                         <th scope="col" colspan="2" class="px-1 py-3 mx-auto text-center tracking-wide">MONSTER</th>
                         <th scope="col" class="px-2 py-3 mx-auto text-center" v-for="blights of conversion.blights">
@@ -21,16 +21,16 @@
                 </thead>
                 <tbody>
                     <tr class="py-3">
-                        <td class="py-2 text-center" colspan="2">
-                            <div class="inline-block bg-yellow-400/50 text-lg rounded-full px-4 p-1 my-1 md:mr-6">
+                        <th class="py-2 text-center" colspan="2">
+                            <div class="inline-block bg-yellow-400/50 text-lg rounded-full px-4 p-1 mr-1 md:mr-4">
                                 <abbr :title="recommendationAbbr.first[locale]">1</abbr>
                             </div>
-                            <div class="inline-block bg-violet-300/50 text-lg rounded-full px-4 p-1">
+                            <div class="inline-block bg-gray-300/50 text-lg rounded-full px-4 p-1">
                                 <abbr :title="recommendationAbbr.second[locale]">2</abbr>
                             </div>
-                        </td>
+                        </th>
                         <th class="px-2 text-center" v-for="recommend of recommendationBySelected"
-                            :class="recommendedColour(recommendationBySelected)[0] === recommend ? ' bg-yellow-400/50' : recommendedColour(recommendationBySelected)[1] === recommend ? ' bg-violet-300/50' : ''">
+                            :class="recommendedColour(recommendationBySelected)[0] === recommend ? ' bg-yellow-400/50' : recommendedColour(recommendationBySelected)[1] === recommend ? ' bg-gray-300/50' : ' bg-yellow-600/50'">
                             <span>{{ recommend }}</span>
                         </th>
                     </tr>
@@ -49,6 +49,9 @@
                             {{ figures }}
                         </td>
                     </tr>
+                    <tr class="my-8">
+                        <td class="py-4"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -57,10 +60,11 @@
 </template>
 
 <script setup>
-import { ref, inject } from "vue";
+import { ref } from "vue";
 import conversion from "~/assets/conversion.json";
 
-const locale = ref("zh");
+const defaultLocale = "zh";
+const locale = ref(defaultLocale);
 const localeList = ref([{
     value: "en",
     text: "English"
@@ -111,8 +115,6 @@ const recommendedColour = (r) => {
     }
     return [max, secondMax];
 };
-
-
 </script>
 
 <style>
@@ -130,7 +132,7 @@ const recommendedColour = (r) => {
     position: absolute;
 }
 
-#conversion-table-after {
+#conversion-table::after {
     content: "";
     z-index: -5;
     background: url(/img/capcom/product_bg-b.jpg) center bottom no-repeat;
@@ -170,5 +172,16 @@ input[type='checkbox']:checked {
     background-position: center;
     display: inline-block;
     background-size: 90%;
+}
+
+abbr[title] {
+    @apply relative underline decoration-dotted;
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+    content: attr(title);
+
+    @apply absolute w-auto px-2 py-1 left-0 bottom-8 text-sm tracking-wider rounded bg-stone-800 text-white shadow whitespace-nowrap;
 }
 </style>

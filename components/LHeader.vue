@@ -1,9 +1,9 @@
 <template>
     <header class="bg-zinc-800">
-        <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-screen-xl px-4 py-2 mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
-                    <a class="flex gap-x-4 text-amber-200" href="/">
+                    <a class="flex gap-x-4 text-amber-300" href="/">
                         <span class="sr-only">Home</span>
                         <img src="/img/capcom/icon_sunbreak_alt.png" class="h-12 w-12" fill="currentColor" />
                         <h1 class="text-xl md:text-3xl font-semibold self-center uppercase tracking-widest">SHAC</h1>
@@ -32,7 +32,7 @@
                     <div class="flex items-center gap-4">
 
                         <div class="kare">
-                            <a class=" px-4 py-2 inline-block text-lg font-semibold text-amber-300 border-2 border-amber-300 bg-transparent hover:text-black hover:bg-amber-400 shadow"
+                            <a class=" px-4 py-2 inline-block text-base md:text-lg font-semibold text-amber-300 border-2 border-amber-300 bg-transparent hover:text-black hover:bg-amber-600 shadow"
                                 href="https://www.youtube.com/watch?v=flQQmeKBEl0" target="_blank" rel="noopener">
                                 <span class="inline-block">狩れ！</span>
                                 <span class="inline-block ml-2"><img src="/img/capcom/buy-arrow.png" class="w-2" /></span>

@@ -2,11 +2,11 @@
     <footer class="bg-zinc-900">
         <div class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-24">
             <div class="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8">
-                <a class="inline-block p-2 text-amber-200 bg-zinc-600 rounded-full sm:p-3 lg:p-4 hover:bg-zinc-500"
+                <a class="inline-block p-2 text-amber-300/75 bg-zinc-700 rounded-full sm:p-3 lg:p-4 hover:bg-zinc-500"
                     href="#top">
                     <span class="sr-only">Back to top</span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
                             clip-rule="evenodd" />
@@ -40,15 +40,15 @@
                             </a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-white/75"
-                                href="https://www.monsterhunter.com/rise-sunbreak/" target="_blank" rel="noopener">
-                                Monster Hunter Rise: Sunbreak
-                            </a>
-                        </li>
-                        <li>
                             <a class="text-white hover:text-white/75" href="https://github.com/assanges/viva-sunbreak"
                                 target="_blank" rel="noopener">
                                 GitHub Repo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-white/75"
+                                href="https://www.monsterhunter.com/rise-sunbreak/" target="_blank" rel="noopener">
+                                Monster Hunter Rise: Sunbreak
                             </a>
                         </li>
                     </ul>
