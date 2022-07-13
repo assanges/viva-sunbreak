@@ -63,10 +63,6 @@
 import { ref } from "vue";
 import conversion from "~/assets/conversion.json";
 
-definePageMeta({
-  title: 'Some Page'
-})
-
 const defaultLocale = "zh";
 const locale = ref(defaultLocale);
 const localeList = ref([{
@@ -81,7 +77,7 @@ const localeList = ref([{
 }]);
 
 const recommendationAbbr = {
-    first: { en: "1st Best", zh: "第一", ja: "最適" },
+    first: { en: "1st Best", zh: "第一推薦", ja: "最適" },
     second: { en: "Next Best", zh: "第二推薦", ja: "代案" }
 };
 

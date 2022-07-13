@@ -27,7 +27,7 @@
                             rel="noopener">gamer.com.tw</a> (ShawnW1031)
                         and
                         <a href="https://www.ptt.cc/bbs/MH/M.1657188036.A.A28.html" class="underline" target="_blank"
-                            rel="noopener">PTT</a> (GaARo). A big hand to him for his hard work and original data from
+                            rel="noopener">PTT/MH</a> (GaARo). A big hand to him for his hard work and original data from
                         <a href="https://gamewith.jp/mhrize/article/show/312232" class="underline" target="_blank"
                             rel="noopener">gamewith.jp</a>!
                     </p>
@@ -61,7 +61,7 @@
                     <p>"モンスターハンターライズ" 及び "モンスターハンターライズ：サンブレイク"は株式会社カプコンの登録商標または商標です。</p>
                 </div>
             </div>
-            <img src="/img/capcom/privilege_ic.png" class="w-full md:w-1/3 place-self-center"/>
+            <img src="/img/capcom/privilege_ic.png" class="w-full md:w-1/3 place-self-center" />
         </div>
         <div class="line-after h-8 bg-cover"></div>
     </section>
