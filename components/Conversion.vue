@@ -63,7 +63,7 @@
 import { ref } from "vue";
 import conversion from "~/assets/conversion.json";
 
-const defaultLocale = "zh".toString();
+const defaultLocale = "zh";
 const locale = ref(defaultLocale);
 const localeList = ref([{
     value: "en",
@@ -77,8 +77,8 @@ const localeList = ref([{
 }]);
 
 const recommendationAbbr = {
-    first: { en: "Best fit", zh: "第一適合", ja: "最適なアクション" },
-    second: { en: "2nd fit", zh: "第二適合", ja: "次の最適なアクション" }
+    first: { en: "1st Best", zh: "第一", ja: "最適" },
+    second: { en: "Next Best", zh: "第二推薦", ja: "代案" }
 };
 
 const selectedMonsters = ref([]);
