@@ -63,6 +63,10 @@
 import { ref } from "vue";
 import conversion from "~/assets/conversion.json";
 
+definePageMeta({
+  title: 'Some Page'
+})
+
 const defaultLocale = "zh";
 const locale = ref(defaultLocale);
 const localeList = ref([{
